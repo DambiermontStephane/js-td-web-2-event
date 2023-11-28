@@ -1,6 +1,6 @@
-var buttonElt = document.getElementById("hello");
+let buttonElt = document.getElementById("hello");
 buttonElt.addEventListener("click", e => {
-	var imgElt = document.createElement('img');
+	let imgElt = document.createElement('img');
 	imgElt.src = "bonjour.jpg";
 	imgElt.alt = "Bonjour, toi !";
 	document.querySelector('.display').appendChild(imgElt);
