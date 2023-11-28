@@ -10,7 +10,27 @@ EXERCICE 5 : Change couleur (2) - Colorie la page en fonction des touches press�
 - Méthode : utilise un switch pour gérer les différents cas de touches
 */
 
+document.addEventListener('keypress', (e) => {
+    const touchePressee = e.key.toUpperCase()
+    console.log(touchePressee)
+    switch (touchePressee) {
+        case 'R':
+            document.body.style.background = 'rgb(255, 0, 0)';
+            break;
+        case 'V':
+            document.body.style.background = 'rgb(0, 255, 0)';
+            break;
+        case 'B':
+            document.body.style.background = 'rgb(0, 0, 255)';
+            break;
+        case 'J':
+            document.body.style.background = 'rgb(255, 255, 0)';
+            break;
+        default:
+            alert("Veuillez presser l'une de ces touches : R, V, B, J.")
 
+    }
+})
 
 /* 
 N.B. La méthode de récupération de la touche pressée dans le tutoriel est dépréciée et plus compliquée (on récupère le code de la touche et puis il faut encore y appliquer une fonction pour transformer ce code en lettre) :
