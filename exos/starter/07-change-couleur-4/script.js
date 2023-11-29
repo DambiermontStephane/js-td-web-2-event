@@ -7,15 +7,4 @@ Version 1  : une fonction par bouton radio
 		(2) un alert dans chaque fonction pour voir à quoi correspond e.target.value
 */
 
-const colorie = {
 
-    init() {
-        document.querySelectorAll('input[type=radio]').forEach(i => {
-            i.addEventListener('click', (e) => {
-                document.body.style.background = e.currentTarget.value;
-            })
-        })
-    }
-}
-
-colorie.init()

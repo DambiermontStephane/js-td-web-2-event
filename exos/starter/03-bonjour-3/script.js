@@ -5,10 +5,10 @@ Au clic sur le bouton,
 - fais disparaître le bouton
 */
 
-document.getElementById('hello').addEventListener('click', (e) => {
+/*document.getElementById('hello').addEventListener('click', (e) => {
     document.querySelector('.display').insertAdjacentHTML("beforeend", `<img src="bonjour.jpg">`)
     document.querySelector('.actions').removeChild(e.currentTarget)
-})
+})*/
 
 /*
 Chaque type d'événement est associé à un objet Event spécifique qui fournit des informations sur l'événement via ses propriétés.
