@@ -11,7 +11,19 @@ Au focus sur le champ, vide-le et change sa couleur de fond. Lorsqu'on clique en
 // Un seul champ
 
 
+
 // Deux champs
 
 
+
 // Plusieurs champs
+
+document.querySelectorAll('input[type=text]').forEach(i => {
+    i.addEventListener('focus', (e) => {
+        e.currentTarget.value = '';
+        e.currentTarget.style.backgroundColor = "Lavender";
+    })
+    i.addEventListener('blur', (e) => {
+        e.currentTarget.style.backgroundColor = 'white';
+    })
+})
