@@ -270,3 +270,8 @@ ol#target {
     font-size: 1.4rem;
     color: slategray;
 }
+
+figure {
+    display: flex;
+    justify-content: center;
+}
